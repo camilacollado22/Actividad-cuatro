@@ -1,14 +1,14 @@
-const parametros = new URLSearchParams(window.location.search);
+const parametros =
+        new URLSearchParams(window.location.search);
 
-const nombre = parametros.get("nombre");
-const email = parametros.get("email");
-const edad = parametros.get("edad");
-const pais = parametros.get("pais");
+    document.getElementById("nombre").textContent =
+        `Nombre:  ${parametros.get("nombre")}`;
 
-const resultado = document.getElementById("datos");
-resultado.innerHTML = `
-    <p><strong>Nombre:</strong> ${nombre}</p>
-    <p><strong>Email:</strong> ${email}</p>
-    <p><strong>Edad:</strong> ${edad}</p>
-    <p><strong>País:</strong> ${pais}</p>
-`;
+    document.getElementById("email").textContent =
+        `Email:  ${parametros.get("email")}`;
+
+    document.getElementById("edad").textContent =
+        `Edad:  ${parametros.get("edad")}`;
+
+    document.getElementById("pais").textContent =
+        `Pais:  ${parametros.get("pais")}`;

@@ -5,8 +5,7 @@ const email = parametros.get("email");
 const edad = parametros.get("edad");
 const pais = parametros.get("pais");
 
-const resultado = document.getElementById("resultado");
-
+const resultado = document.getElementById("datos");
 resultado.innerHTML = `
     <p><strong>Nombre:</strong> ${nombre}</p>
     <p><strong>Email:</strong> ${email}</p>
